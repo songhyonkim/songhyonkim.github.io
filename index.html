@@ -689,6 +689,15 @@
         a.classList.toggle('active', a.getAttribute('href') === '#' + current);
       });
     }, { passive: true });
+
+    // Bold author name in publication lists
+    document.querySelectorAll('.pub-authors').forEach(el => {
+      el.innerHTML = el.innerHTML
+        .replace(/김송현/g, '<strong>김송현</strong>')
+        .replace(/Songhyon Kim/g, '<strong>Songhyon Kim</strong>')
+        .replace(/Song-Hyon Kim/g, '<strong>Song-Hyon Kim</strong>')
+        .replace(/Song Hyon Kim/g, '<strong>Song Hyon Kim</strong>');
+    });
   </script>
 
 </body>
