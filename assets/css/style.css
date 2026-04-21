@@ -472,7 +472,7 @@ section { padding: 72px 0; }
 .contact-card a:hover { text-decoration: underline; }
 
 /* ============================================================
-   News — empty state
+   News
    ============================================================ */
 .empty-section {
   text-align: center;
@@ -481,6 +481,58 @@ section { padding: 72px 0; }
 }
 .empty-section i { margin-bottom: 16px; opacity: 0.35; }
 .empty-section p { font-size: 1rem; }
+
+.news-list { display: flex; flex-direction: column; gap: 16px; }
+
+.news-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 20px 22px;
+  transition: border-color 0.18s;
+}
+.news-item:hover { border-color: var(--accent); }
+
+.news-date {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding-top: 3px;
+  white-space: nowrap;
+}
+
+.news-content { flex: 1; }
+
+.news-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.news-body {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .news-item { flex-direction: column; gap: 6px; }
+}
 
 /* ============================================================
    Contact
