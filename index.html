@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="김송현 - 공군사관학교 교수, 국방 AI 시스템 연구실">
+  <title>김송현 | Song Hyeon Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-brand">김송현</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">홈</a></li>
+        <li><a href="#research">연구분야</a></li>
+        <li><a href="#publications">논문</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#lab">연구실</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- About / Hero -->
+    <section id="about">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>김송현 <span class="name-en">Song Hyeon Kim</span></h1>
+          <p class="title">
+            <i class="fas fa-briefcase"></i> 교수 &nbsp;·&nbsp;
+            <i class="fas fa-building-columns"></i> 공군사관학교
+          </p>
+          <p class="bio">
+            공군사관학교 국방 AI 시스템 연구실 책임교수입니다.
+            강화학습 기반 자율 기동 결심, 공중전투 시뮬레이션, 유무인 복합체계(MUM-T),
+            사이버전 분야를 연구하며 미래 국방 AI 기술 발전에 기여하고 있습니다.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/songhyonkim" target="_blank" rel="noopener" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/songhyonkim" target="_blank" rel="noopener" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=songhyonkim" target="_blank" rel="noopener" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="mailto:kim.songhyon@gmail.com" title="이메일">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/img/profile.jpg" alt="김송현 교수"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder" aria-hidden="true">
+            <i class="fas fa-user-tie"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="alt-bg">
+      <div class="container">
+        <h2 class="section-title">연구분야</h2>
+        <div class="research-grid">
+
+          <div class="research-card">
+            <div class="research-icon"><i class="fas fa-robot"></i></div>
+            <h3>국방 인공지능</h3>
+            <p>강화학습 기반 자율 기동 결심 알고리즘 개발, 작전계획 자동화, AI 기반 위협 평가 시스템 연구</p>
+            <div class="tags">
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Autonomous Decision</span>
+              <span class="tag">Defense AI</span>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="fas fa-jet-fighter"></i></div>
+            <h3>공중전투 모델링</h3>
+            <p>전투기 교전 모델링, 공대공 전투 시뮬레이션, BVR/WVR 전술 분석 및 기동 의사결정 연구</p>
+            <div class="tags">
+              <span class="tag">Air Combat</span>
+              <span class="tag">BVR/WVR</span>
+              <span class="tag">Simulation</span>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="fas fa-satellite-dish"></i></div>
+            <h3>무인-유인 복합체계</h3>
+            <p>유무인 복합 항공 무기체계(MUM-T) 임무 효과도 평가, 편대 전술 및 자율 임무 수행 연구</p>
+            <div class="tags">
+              <span class="tag">MUM-T</span>
+              <span class="tag">UAV</span>
+              <span class="tag">Mission Effectiveness</span>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>사이버전 &amp; 정보보호</h3>
+            <p>사이버전 교리 및 군사 사이버 작전 연구, 국방 정보시스템 보안 및 취약점 분석</p>
+            <div class="tags">
+              <span class="tag">Cyber Warfare</span>
+              <span class="tag">Information Security</span>
+              <span class="tag">Military Cyber Ops</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <div class="container">
+        <h2 class="section-title">논문</h2>
+
+        <div class="pub-year-group">
+          <h3 class="pub-year">2025</h3>
+          <div class="pub-list">
+
+            <div class="pub-item">
+              <span class="pub-badge journal">저널</span>
+              <div class="pub-content">
+                <p class="pub-title">원통형 HE 탄두의 파편 생성 모델 설계 및 구현</p>
+                <p class="pub-authors">Kim, S., Lee, M., Kang, S., &amp; Lee, G.</p>
+                <p class="pub-venue"><em>한국정보기술학회논문지</em>, 23(9), 85–95, 2025</p>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-badge conference">학술대회</span>
+              <div class="pub-content">
+                <p class="pub-title">통합 개인전투체계 생체센서 운용을 위한 프레임워크 및 핵심전략</p>
+                <p class="pub-authors">Kim, S., Lee, Y., Shin, W., &amp; Lee, Y.</p>
+                <p class="pub-venue"><em>한국군사과학기술학회 2025 종합학술대회</em>, 제주, 2025. 6.</p>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-badge conference">학술대회</span>
+              <div class="pub-content">
+                <p class="pub-title">유무인 복합 항공 무기체계 임무 효과도 평가 방법 연구</p>
+                <p class="pub-authors">Lee, Y., Kim, S., Lim, J., Kim, S., Park, J., &amp; Lim, S.</p>
+                <p class="pub-venue"><em>한국군사과학기술학회 2025 종합학술대회</em>, 제주, 2025. 6.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pub-year-group">
+          <h3 class="pub-year">2024</h3>
+          <div class="pub-list">
+
+            <div class="pub-item">
+              <span class="pub-badge journal">저널</span>
+              <div class="pub-content">
+                <p class="pub-title">교범 기반 공대공 전투의 자동화된 기동 결심</p>
+                <p class="pub-authors">Yang, K., Kim, S., Lee, Y., Jang, C., &amp; Kim, Y.</p>
+                <p class="pub-venue"><em>Journal of Aerospace Information Systems</em>, 21(1), 28–36, 2024</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pub-year-group">
+          <h3 class="pub-year">2013 이전</h3>
+          <div class="pub-list">
+
+            <div class="pub-item">
+              <span class="pub-badge journal">저널</span>
+              <div class="pub-content">
+                <p class="pub-title">Graph Query and Subgraph Matching</p>
+                <p class="pub-authors">Kim, S. et al.</p>
+                <p class="pub-venue"><em>International Journal (Computer Science)</em>, 2013</p>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-badge book">저서</span>
+              <div class="pub-content">
+                <p class="pub-title">사이버전 개론 (공저)</p>
+                <p class="pub-authors">Kim, S. et al.</p>
+                <p class="pub-venue">초판 2013 · 개정판 2016</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="alt-bg">
+      <div class="container">
+        <h2 class="section-title">프로젝트</h2>
+        <div class="project-grid">
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <i class="fas fa-jet-fighter"></i>
+            </div>
+            <div class="project-info">
+              <h3>공중전투 자율 기동 결심 시스템</h3>
+              <p>강화학습을 활용한 공대공 전투 자율 기동 결심 알고리즘 개발 및 시뮬레이션 검증</p>
+              <div class="tags">
+                <span class="tag">Reinforcement Learning</span>
+                <span class="tag">Air Combat</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <div class="project-info">
+              <h3>유무인 복합체계 임무 효과도 평가</h3>
+              <p>유인-무인 복합 항공 무기체계의 임무 효과도 정량적 평가 모델 개발 및 시뮬레이션</p>
+              <div class="tags">
+                <span class="tag">MUM-T</span>
+                <span class="tag">Mission Analysis</span>
+                <span class="tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="project-info">
+              <h3>통합 개인전투체계 생체센서 운용</h3>
+              <p>전장 환경 개인전투체계의 생체센서 통합 운용 프레임워크 설계 및 핵심전략 도출</p>
+              <div class="tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Biosensor</span>
+                <span class="tag">Combat System</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">
+              <i class="fas fa-bomb"></i>
+            </div>
+            <div class="project-info">
+              <h3>원통형 HE 탄두 파편 생성 모델</h3>
+              <p>원통형 고폭 탄두의 파편 생성 패턴 모델링 및 시뮬레이션 구현</p>
+              <div class="tags">
+                <span class="tag">Warhead Modeling</span>
+                <span class="tag">Fragmentation</span>
+                <span class="tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Laboratory -->
+    <section id="lab">
+      <div class="container">
+        <h2 class="section-title">연구실</h2>
+        <div class="lab-layout">
+
+          <div class="lab-info">
+            <h3>국방 AI 시스템 연구실</h3>
+            <p class="lab-name-en">Defense AI Systems Lab</p>
+            <p class="lab-desc">
+              국방 AI 시스템 연구실은 인공지능 기술을 국방 분야에 적용하는 연구를 수행합니다.
+              자율 전투 시스템, 지능형 의사결정, 무인체계 운용 등 핵심 기술을 개발하여
+              미래 전장 환경에 대비하고 국방 전력을 강화합니다.
+            </p>
+            <ul class="lab-focus">
+              <li><i class="fas fa-check-circle"></i> AI 기반 자율 전투 시스템 개발</li>
+              <li><i class="fas fa-check-circle"></i> 무인-유인 복합체계 (MUM-T) 연구</li>
+              <li><i class="fas fa-check-circle"></i> 군사 시뮬레이션 및 작전 모델링</li>
+              <li><i class="fas fa-check-circle"></i> 사이버전 및 정보보호 기술</li>
+            </ul>
+          </div>
+
+          <div class="lab-affiliation">
+            <div class="affiliation-card">
+              <i class="fas fa-building-columns fa-3x"></i>
+              <h4>공군사관학교</h4>
+              <p>Republic of Korea Air Force Academy</p>
+              <p>충청북도 청주시 상당구</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="alt-bg">
+      <div class="container">
+        <h2 class="section-title" style="display:block;text-align:center;border-bottom:none;margin-bottom:48px;">연락처</h2>
+        <div class="contact-grid">
+
+          <div class="contact-item">
+            <i class="fas fa-envelope fa-2x"></i>
+            <h4>이메일</h4>
+            <a href="mailto:kim.songhyon@gmail.com">kim.songhyon@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <h4>LinkedIn</h4>
+            <a href="https://www.linkedin.com/in/songhyonkim" target="_blank" rel="noopener">
+              linkedin.com/in/songhyonkim
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-github fa-2x"></i>
+            <h4>GitHub</h4>
+            <a href="https://github.com/songhyonkim" target="_blank" rel="noopener">
+              github.com/songhyonkim
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h4>소속</h4>
+            <p>공군사관학교<br>충청북도 청주시</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 김송현 (Song Hyeon Kim) &nbsp;·&nbsp; 공군사관학교 국방 AI 시스템 연구실</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          document.getElementById('navLinks').classList.remove('open');
+        }
+      });
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+      });
+      navAs.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+
+</body>
+</html>
